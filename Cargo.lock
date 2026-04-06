@@ -53,6 +53,7 @@ dependencies = [
 [[package]]
 name = "librtbit-buffers"
 version = "0.1.0"
+source = "git+https://github.com/AusAgentSmith-org/librtbit-buffers.git?tag=v0.1.0#3385f67c4dad792020603542eeb11853a5a60fc7"
 dependencies = [
  "bytes",
  "librtbit-clone-to-owned",
@@ -63,6 +64,7 @@ dependencies = [
 [[package]]
 name = "librtbit-clone-to-owned"
 version = "0.1.0"
+source = "git+https://github.com/AusAgentSmith-org/librtbit-clone-to-owned.git?tag=v0.1.0#205d2c1b13a18bd4c50856a0e2fece02e61716b4"
 dependencies = [
  "bytes",
 ]
@@ -101,6 +103,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e"
 dependencies = [
  "serde_core",
+ "serde_derive",
 ]
 
 [[package]]
