@@ -37,7 +37,7 @@ checksum = "1e748733b7cbc798e1434b6ac524f0c1ff2ab456fe201501e6497c8417a4fc33"
 
 [[package]]
 name = "librtbit-bencode"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "arrayvec",
@@ -53,7 +53,8 @@ dependencies = [
 [[package]]
 name = "librtbit-buffers"
 version = "0.1.0"
-source = "git+https://github.com/AusAgentSmith-org/librtbit-buffers.git?tag=v0.1.0#3385f67c4dad792020603542eeb11853a5a60fc7"
+source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
+checksum = "300b65a47ed968047e9087d97d9b7a240478fc0a0a77b65b9d10f27ffa2cd25e"
 dependencies = [
  "bytes",
  "librtbit-clone-to-owned",
@@ -64,7 +65,8 @@ dependencies = [
 [[package]]
 name = "librtbit-clone-to-owned"
 version = "0.1.0"
-source = "git+https://github.com/AusAgentSmith-org/librtbit-clone-to-owned.git?tag=v0.1.0#205d2c1b13a18bd4c50856a0e2fece02e61716b4"
+source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
+checksum = "2d988ba16e404bfad37f12b042ca399a089715e1fab4c1e5e80267d3cdd82e38"
 dependencies = [
  "bytes",
 ]
