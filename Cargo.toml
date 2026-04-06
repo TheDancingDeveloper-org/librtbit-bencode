@@ -1,0 +1,24 @@
+[package]
+name = "librtbit-bencode"
+version = "0.1.0"
+edition = "2024"
+description = "Bencode serialization and deserialization using Serde"
+license = "MIT"
+repository = "https://github.com/AusAgentSmith-org/librtbit-bencode"
+
+[dependencies]
+serde = "1"
+serde_derive = "1"
+buffers = { git = "https://github.com/AusAgentSmith-org/librtbit-buffers.git", tag = "v0.1.0", package = "librtbit-buffers" }
+clone_to_owned = { git = "https://github.com/AusAgentSmith-org/librtbit-clone-to-owned.git", tag = "v0.1.0", package = "librtbit-clone-to-owned" }
+bytes = "1"
+atoi = "2"
+thiserror = "2"
+arrayvec = "0.7"
+anyhow = "1"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[lints.rust]
+unused = "warn"
