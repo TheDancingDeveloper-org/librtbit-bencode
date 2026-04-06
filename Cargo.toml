@@ -7,7 +7,7 @@ license = "MIT"
 repository = "https://github.com/AusAgentSmith-org/librtbit-bencode"
 
 [dependencies]
-serde = "1"
+serde = { version = "1", features = ["derive"] }
 serde_derive = "1"
 buffers = { git = "https://github.com/AusAgentSmith-org/librtbit-buffers.git", tag = "v0.1.0", package = "librtbit-buffers" }
 clone_to_owned = { git = "https://github.com/AusAgentSmith-org/librtbit-clone-to-owned.git", tag = "v0.1.0", package = "librtbit-clone-to-owned" }
