@@ -1,0 +1,22 @@
+name: Debug
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: System info
+        run: |
+          echo "=== OS ==="
+          cat /etc/os-release
+          echo "=== Rust ==="
+          rustc --version 2>/dev/null || echo "no rust"
+          echo "=== Git ==="
+          git --version
+          echo "=== Docker ==="
+          docker --version 2>/dev/null || echo "no docker"
+      - uses: actions/checkout@v4
+      - name: List files
+        run: ls -la
