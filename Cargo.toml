@@ -9,8 +9,8 @@ repository = "http://100.92.54.45:3002/indexarr/librtbit-bencode"
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_derive = "1"
-buffers = { version = "0.1.0", registry = "forgejo", package = "librtbit-buffers" }
-clone_to_owned = { version = "0.1.0", registry = "forgejo", package = "librtbit-clone-to-owned" }
+buffers = { version = "0.1.1", registry = "forgejo", package = "librtbit-buffers" }
+clone_to_owned = { version = "0.1.1", registry = "forgejo", package = "librtbit-clone-to-owned" }
 bytes = "1"
 atoi = "2"
 thiserror = "2"
