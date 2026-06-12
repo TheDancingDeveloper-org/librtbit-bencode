@@ -16,18 +16,18 @@ checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
 
 [[package]]
 name = "atoi"
-version = "2.0.0"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f28d99ec8bfea296261ca1af174f24225171fea9664ba9003cbebee704810528"
+checksum = "4652e33138d8d9c774c9697a351b019deb33737812be629603434407f288a323"
 dependencies = [
  "num-traits",
 ]
 
 [[package]]
 name = "autocfg"
-version = "1.5.0"
+version = "1.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
+checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
 
 [[package]]
 name = "bytes"
@@ -37,7 +37,7 @@ checksum = "1e748733b7cbc798e1434b6ac524f0c1ff2ab456fe201501e6497c8417a4fc33"
 
 [[package]]
 name = "librtbit-bencode"
-version = "0.1.1"
+version = "0.1.5"
 dependencies = [
  "anyhow",
  "arrayvec",
@@ -52,9 +52,9 @@ dependencies = [
 
 [[package]]
 name = "librtbit-buffers"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29b8cebbaebfe945a5bcc23621c77037c8c9a451b84c9cdd0dadb80cc16414a3"
+version = "0.1.2"
+source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
+checksum = "a3c284674535972fd7693f515f1d12c8ca20b5a2c37a03020bdeca32241cf29c"
 dependencies = [
  "bytes",
  "librtbit-clone-to-owned",
@@ -65,8 +65,8 @@ dependencies = [
 [[package]]
 name = "librtbit-clone-to-owned"
 version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "25ef4d419efb961a6ebc8c5122f835ccfe8b918f16fa83b7001a051039889d9b"
+source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
+checksum = "652077f668126ff93bf2c61fbfc88a38b60b9e50c1edc440a72c2a9a5b614459"
 dependencies = [
  "bytes",
 ]

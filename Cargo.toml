@@ -1,6 +1,6 @@
 [package]
 name = "librtbit-bencode"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2024"
 description = "Bencode serialization and deserialization using Serde"
 license = "MIT"
@@ -12,7 +12,7 @@ serde_derive = "1"
 buffers = { version = "0.1.2", package = "librtbit-buffers", registry = "forgejo" }
 clone_to_owned = { version = "0.1.1", package = "librtbit-clone-to-owned", registry = "forgejo" }
 bytes = "1"
-atoi = "2"
+atoi = "3"
 thiserror = "2"
 arrayvec = "0.7"
 anyhow = "1"
