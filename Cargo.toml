@@ -9,7 +9,7 @@ repository = "https://github.com/AusAgentSmith-org/librtbit-bencode"
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_derive = "1"
-buffers = { git = "https://github.com/TheDancingDeveloper-org/librtbit-buffers.git", branch = "migration/github-native-source", package = "librtbit-buffers" }
+buffers = { git = "https://github.com/TheDancingDeveloper-org/librtbit-buffers.git", package = "librtbit-buffers" }
 clone_to_owned = { git = "https://github.com/TheDancingDeveloper-org/librtbit-clone-to-owned.git", package = "librtbit-clone-to-owned" }
 bytes = "1"
 atoi = "3"
