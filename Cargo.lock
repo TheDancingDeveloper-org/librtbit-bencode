@@ -53,7 +53,7 @@ dependencies = [
 [[package]]
 name = "librtbit-buffers"
 version = "0.1.2"
-source = "git+https://github.com/TheDancingDeveloper-org/librtbit-buffers.git?branch=migration%2Fgithub-native-source#ac4adf618daa0b69ba7799233d469f105c47d75a"
+source = "git+https://github.com/TheDancingDeveloper-org/librtbit-buffers.git#60fde393b379face7c0acfe7f654a1a5ae3f3731"
 dependencies = [
  "bytes",
  "librtbit-clone-to-owned",
