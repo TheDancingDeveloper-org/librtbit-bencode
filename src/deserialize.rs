@@ -1,7 +1,7 @@
 use std::marker::PhantomData;
 
 use arrayvec::ArrayVec;
-use atoi::{FromRadix10, FromRadix10Signed};
+use atoi::{FromRadix10, FromRadix10Signed, Integer};
 use buffers::ByteBuf;
 use clone_to_owned::CloneToOwned;
 use serde::{Deserialize, Serialize, forward_to_deserialize_any};
@@ -53,8 +53,8 @@ impl<'de> BencodeDeserializer<'de> {
     }
 
     fn parse_bytes(&mut self) -> Result<&'de [u8], Error> {
-        let b = match usize::from_radix_10(self.buf) {
-            (v, len) if len > 0 && self.buf.get(len) == Some(&b':') => {
+        let b = match Integer::<usize>::from_radix_10(self.buf) {
+            (Integer(v), len) if len > 0 && self.buf.get(len) == Some(&b':') => {
                 self.buf = unsafe { self.buf.get_unchecked(len + 1..) };
                 let (bytes, rest) = self.buf.split_at_checked(v).ok_or(Error::Eof)?;
                 self.buf = rest;
