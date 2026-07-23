@@ -53,8 +53,7 @@ dependencies = [
 [[package]]
 name = "librtbit-buffers"
 version = "0.1.2"
-source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
-checksum = "a3c284674535972fd7693f515f1d12c8ca20b5a2c37a03020bdeca32241cf29c"
+source = "git+https://github.com/TheDancingDeveloper-org/librtbit-buffers.git?branch=migration%2Fgithub-native-source#ac4adf618daa0b69ba7799233d469f105c47d75a"
 dependencies = [
  "bytes",
  "librtbit-clone-to-owned",
@@ -65,8 +64,7 @@ dependencies = [
 [[package]]
 name = "librtbit-clone-to-owned"
 version = "0.1.1"
-source = "sparse+https://repo.indexarr.net/api/packages/indexarr/cargo/"
-checksum = "652077f668126ff93bf2c61fbfc88a38b60b9e50c1edc440a72c2a9a5b614459"
+source = "git+https://github.com/TheDancingDeveloper-org/librtbit-clone-to-owned.git#6944f73c91e9a4cc3be7694f864c5c06012066fc"
 dependencies = [
  "bytes",
 ]
